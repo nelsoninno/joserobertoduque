@@ -85,6 +85,7 @@
     steps = Array.prototype.slice.call(timeline.querySelectorAll('li'));
   }
   var portrait = document.querySelector('.portrait');
+  var wide = window.matchMedia('(min-width: 861px)');
 
   var ticking = false;
   function update() {
@@ -103,8 +104,14 @@
         li.classList.toggle('passed', li.getBoundingClientRect().top + 10 < mark);
       });
     }
-    if (portrait && y < vh * 1.2) {
-      portrait.style.setProperty('--shift', (y * 0.06).toFixed(1) + 'px');
+    if (portrait) {
+      /* Desktop only, and never more than 10px, measured from the photo itself */
+      var shift = 0;
+      if (wide.matches) {
+        var pr = portrait.getBoundingClientRect();
+        shift = Math.max(-1, Math.min(1, (vh / 2 - (pr.top + pr.height / 2)) / vh)) * 10;
+      }
+      portrait.style.setProperty('--shift', shift.toFixed(1) + 'px');
     }
   }
   window.addEventListener('scroll', function () {

@@ -204,6 +204,7 @@ p{max-width:68ch}
 
 /* The quote on the blue band rises further and slower */
 .motion .why blockquote{transform:translateY(48px);transition-duration:1s,1.2s}
+.motion .why blockquote.in{transform:none}
 /* Journey steps slide in from the line */
 .motion .timeline li{transform:translateX(-18px)}
 .motion .timeline li.in{transform:none}
@@ -226,6 +227,7 @@ p{max-width:68ch}
 
 /* Portrait: the blue block drifts a little against the photo */
 .portrait::before{transform:translate(calc(var(--shift,0px) * -1),var(--shift,0px));transition:transform .1s linear}
+@media (max-width:860px){.portrait::before{transform:none}}
 
 /* Reading progress bar and header shadow */
 .scroll-progress{position:fixed;top:0;left:0;right:0;height:3px;background:var(--accent);transform-origin:left;transform:scaleX(0);z-index:30;pointer-events:none}
