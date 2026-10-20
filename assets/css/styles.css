@@ -193,3 +193,46 @@ p{max-width:68ch}
 .family img{width:100%;border-radius:4px;aspect-ratio:3/2;object-fit:cover}
 .family figcaption{font-size:.85rem;color:var(--muted);margin-top:.6rem}
 .timeline p+p{margin-top:.7rem}
+
+/* ===== Scroll motion =====
+   Hidden start states apply only when the head script set .motion
+   (motion allowed + JS running). Without JS everything is visible. */
+.motion :where(.section-head,.why blockquote,.why .wrap > div:last-child > *,.now-grid > div > p,.steps li,.photo,.who li,.timeline li,.moments figure,.family,.belief,.video,.press li,.faq-item,.contact .wrap > *){
+  opacity:0;transform:translateY(28px);
+  transition:opacity .7s ease var(--d,0ms),transform .9s cubic-bezier(.2,.7,.2,1) var(--d,0ms)}
+.motion :where(.section-head,.why blockquote,.why .wrap > div:last-child > *,.now-grid > div > p,.steps li,.photo,.who li,.timeline li,.moments figure,.family,.belief,.video,.press li,.faq-item,.contact .wrap > *).in{opacity:1;transform:none}
+
+/* The quote on the blue band rises further and slower */
+.motion .why blockquote{transform:translateY(48px);transition-duration:1s,1.2s}
+/* Journey steps slide in from the line */
+.motion .timeline li{transform:translateX(-18px)}
+.motion .timeline li.in{transform:none}
+/* "Who" rows come in from the right */
+.motion .who li{transform:translateX(28px)}
+.motion .who li.in{transform:none}
+
+/* Photos: the frame opens and the image settles */
+.motion :where(.moments figure,.photo,.family) img{clip-path:inset(14% 0 0 0);transform:scale(1.08);
+  transition:clip-path 1.1s cubic-bezier(.2,.7,.2,1) var(--d,0ms),transform 1.4s cubic-bezier(.2,.7,.2,1) var(--d,0ms)}
+.motion :where(.moments figure,.photo,.family).in img{clip-path:inset(0 0 0 0);transform:scale(1)}
+.moments figure{overflow:hidden}
+.moments img{transition:transform .6s ease}
+.moments figure:hover img{transform:scale(1.03)}
+
+/* Journey line fills in blue as you read; dots light up when passed */
+.timeline-fill{position:absolute;left:0;top:.5rem;bottom:.5rem;width:2px;background:var(--accent);transform-origin:top;transform:scaleY(0);pointer-events:none}
+.timeline li::before{transition:background-color .35s ease,transform .35s ease}
+.timeline li.passed::before{background:var(--accent);transform:scale(1.15)}
+
+/* Portrait: the blue block drifts a little against the photo */
+.portrait::before{transform:translate(calc(var(--shift,0px) * -1),var(--shift,0px));transition:transform .1s linear}
+
+/* Reading progress bar and header shadow */
+.scroll-progress{position:fixed;top:0;left:0;right:0;height:3px;background:var(--accent);transform-origin:left;transform:scaleX(0);z-index:30;pointer-events:none}
+.site-header{transition:box-shadow .3s ease,background-color .3s ease}
+.site-header.scrolled{box-shadow:0 8px 24px -16px color-mix(in srgb,var(--ink) 45%,transparent)}
+
+@media (prefers-reduced-motion:reduce){
+  .scroll-progress,.timeline-fill{display:none}
+  .portrait::before{transform:none}
+}
