@@ -1,0 +1,23 @@
+/* assets/css/tokens.css: colors + fonts ONLY. The one file to edit to re-skin the site. */
+:root{
+  /* Palette: bone and beige, with José Roberto's own vivid blue */
+  --bg:        #FAF8F3;   /* bone white, page background */
+  --surface:   #F1EBDF;   /* beige, alternate sections */
+  --line:      #DED6C6;   /* hairlines and borders */
+  --ink:       #12162B;   /* main text (deep navy, never a dark background) */
+  --muted:     #565B70;   /* secondary text */
+  --accent:    #0000FF;   /* his blue: links, buttons, the mission band */
+  --accent-deep:#0000C2;  /* hover state for the blue */
+  --on-accent: #FFFFFF;   /* text on the blue */
+
+  /* Footer credit colors (read by the EKY credit logo) */
+  --footer-bg: #0000FF;
+  --footer-fg: #FFFFFF;
+
+  /* Fonts */
+  --font-display: 'Bricolage Grotesque', 'Helvetica Neue', Arial, sans-serif;
+  --font-body:    'Instrument Sans', 'Helvetica Neue', Arial, sans-serif;
+
+  /* Layout */
+  --max: 1160px;
+}

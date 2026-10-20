@@ -1,0 +1,16 @@
+{
+  "name": "José Roberto Rodríguez Duque",
+  "short_name": "José Roberto",
+  "description": "Startup ecosystem builder in El Salvador and CEO of CoreNest Accelerator El Salvador.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FAF8F3",
+  "theme_color": "#0000FF",
+  "lang": "en",
+  "icons": [
+    {"src":"/favicon-192x192.png","sizes":"192x192","type":"image/png","purpose":"any"},
+    {"src":"/favicon-512x512.png","sizes":"512x512","type":"image/png","purpose":"any"},
+    {"src":"/apple-touch-icon.png","sizes":"180x180","type":"image/png","purpose":"any"}
+  ]
+}
