@@ -1,8 +1,8 @@
-# robots.txt for joserobertoduque.com
+# robots.txt for joserobertorodriguez.com
 # Every page is open and indexable, including AI search and user-fetch agents.
 
 User-agent: *
 Allow: /
 
-# AI guide: https://joserobertoduque.com/llms.txt
-Sitemap: https://joserobertoduque.com/sitemap.xml
+# AI guide: https://joserobertorodriguez.com/llms.txt
+Sitemap: https://joserobertorodriguez.com/sitemap.xml

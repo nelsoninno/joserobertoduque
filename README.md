@@ -1,4 +1,4 @@
-# joserobertoduque.com: your website package
+# joserobertorodriguez.com: your website package
 
 Last updated October 2026. Working domain, still to be confirmed.
 
