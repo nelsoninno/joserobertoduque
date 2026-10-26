@@ -197,10 +197,10 @@ p{max-width:68ch}
 /* ===== Scroll motion =====
    Hidden start states apply only when the head script set .motion
    (motion allowed + JS running). Without JS everything is visible. */
-.motion :where(.section-head,.why blockquote,.why .wrap > div:last-child > *,.now-grid > div > p,.steps li,.photo,.who li,.timeline li,.moments figure,.family,.belief,.video,.press li,.faq-item,.contact .wrap > *){
+.motion :where(.section-head,.why blockquote,.why .wrap > div:last-child > *,.now-grid > div > p,.steps li,.photo,.who li,.timeline li,.moments figure,.family,.belief,.video,.press li,.faq-item,.contact .wrap > *,.eco-years li,.pillars li,.eco-sources){
   opacity:0;transform:translateY(28px);
   transition:opacity .7s ease var(--d,0ms),transform .9s cubic-bezier(.2,.7,.2,1) var(--d,0ms)}
-.motion :where(.section-head,.why blockquote,.why .wrap > div:last-child > *,.now-grid > div > p,.steps li,.photo,.who li,.timeline li,.moments figure,.family,.belief,.video,.press li,.faq-item,.contact .wrap > *).in{opacity:1;transform:none}
+.motion :where(.section-head,.why blockquote,.why .wrap > div:last-child > *,.now-grid > div > p,.steps li,.photo,.who li,.timeline li,.moments figure,.family,.belief,.video,.press li,.faq-item,.contact .wrap > *,.eco-years li,.pillars li,.eco-sources).in{opacity:1;transform:none}
 
 /* The quote on the blue band rises further and slower */
 .motion .why blockquote{transform:translateY(48px);transition-duration:1s,1.2s}
@@ -238,3 +238,18 @@ p{max-width:68ch}
   .scroll-progress,.timeline-fill{display:none}
   .portrait::before{transform:none}
 }
+
+/* Ecosystem history + builder (added 2026-10-26) */
+.eco-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.eco-years{list-style:none;border-top:2px solid var(--ink)}
+.eco-years li{display:grid;grid-template-columns:7.5rem 1fr;gap:1rem;padding:1.1rem 0;border-bottom:1px solid var(--line)}
+.eco-years b{font-family:var(--font-display);font-weight:700;color:var(--accent);font-size:1.1rem;line-height:1.5}
+.eco-years p{color:var(--muted)}
+.eco-builder h3{font-size:clamp(1.35rem,2.2vw,1.7rem);margin-bottom:.7rem}
+.eco-builder > p{color:var(--muted)}
+.pillars{list-style:none;margin-top:1.4rem}
+.pillars li{padding:1rem 0;border-top:1px solid var(--line)}
+.pillars strong{display:block;font-weight:600;margin-bottom:.2rem}
+.pillars span{color:var(--muted)}
+.eco-sources{margin-top:2rem;font-size:.85rem;color:var(--muted);max-width:none}
+@media (max-width:860px){.eco-grid{grid-template-columns:1fr}.eco-years li{grid-template-columns:5.8rem 1fr}}

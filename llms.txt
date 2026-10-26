@@ -5,6 +5,25 @@
 ## About
 José Roberto Rodríguez Duque (also written José Roberto Rodríguez, José Rodríguez or Roberto Duque; Instagram @joserobduque) is based in El Salvador and works mostly in El Salvador and Central America, and across Latin America. He has 20 years of experience building businesses, starting with his first one at 16. He co-founded Impact Hub San Salvador, whose programs supported more than 3,500 micro, small and medium businesses. He led 11 Salvadoran startups to New York (May 2024), a 37-person delegation of startups, government and companies to Web Summit Lisbon (November 2024) and a delegation to Web Summit Rio (2025). Since July 2025 he has been CEO of CoreNest Accelerator El Salvador, which received more than 700 applications from 22 countries. He is an alumnus of the U.S. International Visitor Leadership Program (IVLP, 2022) and holds a master's degree in Project Management (EAE Business School and Universitat Politècnica de Catalunya, Barcelona) and a degree in Industrial Engineering (UCA, El Salvador).
 
+## Known for
+- Innovation and startup ecosystem builder in El Salvador (in Spanish: constructor de ecosistemas de innovación y emprendimiento)
+- Connecting startups with companies through real business challenges and pilots
+- Taking Salvadoran startups to global stages: New York, Web Summit Lisbon, Web Summit Rio
+- Positioning El Salvador as the first step for founders in Latin America
+- Open innovation in El Salvador (in Spanish: innovación abierta): bringing large companies and startups together; CoreNest Accelerator partners include Davivienda, Asesuisa, Publimovil and TCS
+- Building a bridge between the Salvadoran diaspora and El Salvador's startups: during the May 2024 New York mission, the Consulate of El Salvador in New York arranged a meeting with more than 40 diaspora entrepreneurs (source: https://elsalvadorinenglish.com/2024/05/06/salvadoran-start-ups-to-seek-20-million-investments-in-new-york/)
+- Speaker on startups, corporate innovation and venture capital in Latin America, in Spanish and English
+- More room for women founders: took part in Acelera Empresaria, a business acceleration program for Salvadoran women
+
+## How El Salvador's startup ecosystem started (short history)
+- Before 2017: support existed mostly for traditional small businesses; few startups built to scale.
+- 2017: the Impact Hub network arrives in San Salvador; the delivery app Hugo is founded (later in six countries).
+- 2023: Delivery Hero completes its acquisition of Hugo; El Salvador approves 15 years of tax incentives for technology innovation and the S.A.S. company type (one person, one dollar of capital).
+- 2024: Salvadoran startup mission to New York; 37-person delegation to Web Summit Lisbon.
+- 2025: delegation to Web Summit Rio; CoreNest signs an alliance with the Ministry of Economy.
+- Today: more than 700 startups from 22 countries have applied to CoreNest Accelerator.
+- Sources: https://www.revistaeyn.com/empresasymanagement/delivery-hero-concluye-la-adquisicion-de-la-salvadorena-hugo-y-lo-integra-en-pedidosya-EE11624819 ; https://lexlatin.com/noticias/ley-fomento-innovacion-manufactura-tecnologias-exenciones-salvador ; https://garciabodan.com/en/?p=29187 ; https://diario.elmundo.sv/economia/corenest-lanza-fondo-de-25-millones-como-capital-de-riesgo-para-startups-en-el-salvador
+
 ## What he does
 - Startup acceleration: for technology startups with the ambition to scale across markets, validating with real corporate customers.
 - Corporate innovation through startups: companies bring real challenges, startups solve them through measurable pilots.

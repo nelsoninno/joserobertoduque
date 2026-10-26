@@ -21,6 +21,9 @@
     ['.video', 'group'],
     ['.press li', 'group'],
     ['.faq-item', 'group'],
+    ['.eco-years li', 'group'],
+    ['.pillars li', 'group'],
+    ['.eco-sources', null],
     ['.contact .wrap > *', 'group']
   ];
   var targets = [];
